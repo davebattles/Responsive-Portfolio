@@ -100,16 +100,7 @@ h3{
   }
 
 /* added reflex and may add this to a few other properties later */
-@media screen and (max-width: 700px) {
-  .positioningNav {
-      top: 10px;
-      left: -100px;
-  }
-  #about, #portfolio, #contact {
-    background: rgba(255, 255, 255, 0.74);
-  }
-  
-}
+
 
  
 /***
@@ -210,13 +201,50 @@ hr {
   background-color:rgba(248, 241, 241, 0.85);
   color: #850c3b;
   font-weight: bold;
-  width: 75%;
   min-width: 350px;
+  max-width: 800px;
   height: 1150px;
   font-family: 'Poppins', sans-serif;
   position: relative;
   border: 1px #000 solid;
 }
+
+@media screen and (max-width: 640px) {
+  .portfolio {
+  max-width: 400px !important;
+  height: 2100px;
+  }
+  .contact {
+    width: 300px !important;
+
+  }
+  input.messageBox {
+    width: 300px !important;
+    
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .portfolio {
+    width: 500px !important;
+  }
+  .positioningNav {
+    top: 10px;
+    left: -100px;
+}
+#about, #portfolio, #contact {
+  background: rgba(255, 255, 255, 0.74);
+}
+}
+@media screen and (max-width: 980px) {
+  .portfolio {
+  width: 800px !important;
+  }
+
+}
+
+
+
 .container {
   padding: 0px 30px 0px;
 }
@@ -240,16 +268,12 @@ img{
   width: 40%;
  
 }
-@media screen and (max-width: 700px) {
-  .column {
-    
-   
-  }
+
   img {
     width: 300px;
     height: 300px;
   }
-}
+
 .content {
   background-color: white;
   padding: 10px;
@@ -299,13 +323,19 @@ img{
   background-color:rgba(255, 246, 246, 0.85);
   color: #5c5c5c;
   font-weight: bold;
-  max-width: 700px;
+  max-width: 500px;
   font-family: 'Poppins', sans-serif;
   position: relative;
   border: 1px #000 solid;
 }
 
-.styledContact{
+
+
+
+
+
+
+.styledContact {
   color: #865a5a;
 }
 
